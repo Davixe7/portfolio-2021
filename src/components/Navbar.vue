@@ -1,7 +1,9 @@
 <template>
   <div class="custom-navbar custom-container">
     <div class="custom-navbar-brand">
-      <a href="#">EspartaDevs</a>
+      <a href="#">
+        {{ $route.meta.pageName }}
+      </a>
     </div>
     <ul class="custom-navbar-nav">
       <li>
@@ -16,6 +18,13 @@
 
 <script>
 export default {
+  computed:{
+    pageName(){
+      return  this.$route.meta.pageName
+              ? this.$route.meta.pageName
+              : 'EspartaDevs'
+    }
+  }
 }
 </script>
 

@@ -17,14 +17,9 @@
           </div>
           <ul class="custom-navbar-nav">
             <li>
-              <router-link to="/">
-                Inicio
-              </router-link>
-            </li>
-            <li>
-              <router-link to="/portfolio">
-                Portafolio
-              </router-link>
+              <a href="mailto:espartadevs@gmail.com">
+                espartadevs@gmail.com
+              </a>
             </li>
           </ul>
         </div>
@@ -110,6 +105,12 @@ h4 {
   background: #2D2D2D;
   width: fit-content;
 }
+.main {
+  flex: 1 1 100%;
+}
+#app.sidenav-layout .custom-container {
+  padding: 0 40px;
+}
 .section-title {
   font-weight: 700;
   margin-bottom: 25px;
@@ -154,10 +155,7 @@ h4 {
 footer {
   border-top: 1px solid #cecece;
 }
-.main {
-  flex: 1 1 100%;
-}
-#app.sidenav-layout .custom-container {
-  padding: 0 40px;
+.copy {
+  font-size: 13px;
 }
 </style>
